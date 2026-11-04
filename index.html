@@ -56,19 +56,19 @@
       <div class="productos">
         <article class="producto">
           <img src="img/cafe-clasico.svg" width="300" height="220" alt="bolsa de cafe marron">
-          <h3 class="nombre">Altamira Clásico</h3>
+          <h3>Altamira Clásico</h3>
           <p>Origen: Santuario, Risaralda · Notas: chocolate y panela.</p>
           <p class="precio">$32.000 · 500 g</p>
         </article>
         <article class="producto">
           <img src="img/cafe-geisha.svg" width="300" height="220" alt="bolsa de cafe verde">
-          <h3 class="nombre">Geisha de Altura</h3>
+          <h3>Geisha de Altura</h3>
           <p>Origen: Apía, Risaralda · Notas: jazmín y durazno.</p>
           <p class="precio">$58.000 · 250 g</p>
         </article>
         <article class="producto">
           <img src="img/cafe-honey.svg" width="300" height="220" alt="bolsa de cafe color cafe">
-          <h3 class="nombre">Honey La Esmeralda</h3>
+          <h3>Honey La Esmeralda</h3>
           <p>Origen: Belén de Umbría · Notas: miel y frutos rojos.</p>
           <p class="precio">$41.000 · 500 g</p>
         </article>
@@ -99,13 +99,16 @@
          - El campo de correo necesita: <label for="...">, type="email", id y required.
          - El "botón" es un div con onclick: cámbialo por <button type="submit">.
          ============================================================ -->
-    <div class="seccion" id="suscripcion">
-      <div class="subtitulo">Recibe nuestras novedades</div>
+    <section class="seccion" id="suscripcion">
+      <h2 class="subtitulo">Recibe nuestras novedades</h2>
+      <form action="#" method="post">
       <div class="formulario">
-        <input type="text" placeholder="Tu correo">
-        <div class="boton" onclick="alert('¡Gracias!')">Suscribirme</div>
+        <label for="correo">correo electronico</label>
+        <input type="email" id="correo" required>
+        <button class="boton" type="submit">Suscribirme</button>
       </div>
-    </div>
+      </form>
+    </section>
 
   </div>
   </main>
@@ -116,17 +119,16 @@
        - El horario es una tabla de datos: <table> con <caption>,
          y celdas de encabezado <th scope="col"> / <th scope="row">.
        ============================================================ -->
-  <div class="pie">
+  <footer class="pie">
     <div>
       <div class="pie-titulo">Visítanos</div>
-      <div>Carrera 7 # 12-45, Santuario, Risaralda</div>
-      <div>Tel. 606 368 0000</div>
+      <address>Carrera 7 # 12-45, Santuario, Risaralda, Tel. 606 368 0000</address>
     </div>
-    <div>
-      <div class="pie-titulo">Horario</div>
-      <div>Lunes a viernes: 8:00 a. m. – 6:00 p. m.</div>
-      <div>Sábados: 9:00 a. m. – 2:00 p. m.</div>
-    </div>
-  </div>
+    <table>
+      <caption class="pie-titulo">Horario</caption>
+      <th scope="col">Lunes a viernes: 8:00 a. m. – 6:00 p. m.</th>
+      <th scope="row">Sábados: 9:00 a. m. – 2:00 p. m.</th>
+    </table>
+  </footer>
 </body>
 </html>
