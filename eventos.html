@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catas de Café - Café Altamira</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Enlace de salto -->
+  <a href="#contenido" class="saltar-contenido">Saltar al contenido</a>
+
+  <!-- Header con enlace a la página actual -->
+  <header class="encabezado">
+    <a class="logo" href="index.html#cafes">
+      <img src="img/grano.svg" alt="" width="28" height="28">
+      Café Altamira
+    </a>
+    <nav aria-label="Principal">
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#cafes">Cafés</a></li>
+        <li><a href="index.html#historia">Historia</a></li>
+        <li><a href="index.html#suscripcion">Suscripción</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main id="contenido" -->
+  <main id="contenido">
+    
+    <!-- Seccion Portada Eventos -->
+    <section class="hero">
+      <h1>Próximas Catas y Experiencias de Café</h1>
+      <p>Aprende a identificar notas, fragancias y atributos del café con nuestros maestros tostadores.</p>
+    </section>
+
+    <!-- Catas como articles con time -->
+    <section id="catas" class="seccion">
+      <h2>Programación de Catas</h2>
+      
+      <div class="productos">
+        <article class="producto">
+          <h3>Cata Sensorial de Variedades</h3>
+          <p><time datetime="2026-11-20T16:00">20 de Noviembre de 2026, 4:00 PM</time></p>
+          <p>Cupos disponibles: 10 personas</p>
+          <p class="precio">$60.000 COP</p>
+        </article>
+
+        <article class="producto">
+          <h3>Taller de Métodos Filtrados</h3>
+          <p><time datetime="2026-11-27T10:00">27 de Noviembre de 2026, 10:00 AM</time></p>
+          <p>Cupos disponibles: 8 personas</p>
+          <p class="precio">$75.000 COP</p>
+        </article>
+
+        <article class="producto">
+          <h3>Cata a Ciegas: Granos de Risaralda</h3>
+          <p><time datetime="2026-12-04T15:00">4 de Diciembre de 2026, 3:00 PM</time></p>
+          <p>Cupos disponibles: 12 personas</p>
+          <p class="precio">$50.000 COP</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Formulario de inscripción -->
+    <section id="inscripcion" class="seccion">
+      <h2>Inscríbete a una Cata</h2>
+      
+      <form action="#" method="post">
+        <div>
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div>
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
+
+        <fieldset>
+          <legend>Selecciona la cata a la que deseas asistir</legend>
+          
+          <div>
+            <input type="radio" id="cata1" name="cata" value="sensorial" required>
+            <label for="cata1">Cata Sensorial de Variedades (20 Nov)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="cata2" name="cata" value="filtrados">
+            <label for="cata2">Taller de Métodos Filtrados (27 Nov)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="cata3" name="cata" value="ciegas">
+            <label for="cata3">Cata a Ciegas: Granos de Risaralda (4 Dic)</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <input type="checkbox" id="datos" name="datos" required>
+          <label for="datos">Acepto el tratamiento de datos personales</label>
+        </div>
+
+        <button type="submit">Confirmar inscripción</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="pie">
+    <address>
+      <p>Café Altamira · Dosquebradas, Risaralda</p>
+      <p>Contacto: <a href="mailto:info@cafealtamira.com">info@cafealtamira.com</a></p>
+    </address>
+  </footer>
+
+</body>
+</html>
+

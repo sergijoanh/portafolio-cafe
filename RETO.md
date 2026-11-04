@@ -33,16 +33,22 @@ lista de verificación y demuestras que se cumple.
 
 ## Rúbrica
 
-| Criterio | Valor |
-|---|---|
-| Estructura semántica: landmarks, h1 único, orden de encabezados, `article` + `time` | 1.5 |
-| Formulario accesible: labels, `fieldset`/`legend`, `required`, botón real, uso con teclado | 1.5 |
-| Lista de verificación propia (5+, Dado/cuando/entonces) y captura de Lighthouse ≥ 90 | 1.0 |
-| `index.html` sigue en 40/40 y la navegación entre páginas funciona | 1.0 |
-| **Total** | **5.0** |
+| Criterio                                                                                   | Valor   |
+| ------------------------------------------------------------------------------------------ | ------- |
+| Estructura semántica: landmarks, h1 único, orden de encabezados, `article` + `time`        | 1.5     |
+| Formulario accesible: labels, `fieldset`/`legend`, `required`, botón real, uso con teclado | 1.5     |
+| Lista de verificación propia (5+, Dado/cuando/entonces) y captura de Lighthouse ≥ 90       | 1.0     |
+| `index.html` sigue en 40/40 y la navegación entre páginas funciona                         | 1.0     |
+| **Total**                                                                                  | **5.0** |
 
 ---
 
 ## Mi lista de verificación
 
 <!-- Escribe aquí tus 5 o más verificaciones -->
+
+- [x] Dado que uso el teclado, cuando presiono Tab en el formulario, entonces recorro todos los campos y el botón en orden.
+- [x] Dado que reviso las catas, cuando miro las fechas, entonces están marcadas correctamente con la etiqueta `<time>`.
+- [x] Dado que dejo el correo vacío, cuando intento enviar el formulario, entonces el navegador me pide completarlo.
+- [x] Dado que elijo una cata, cuando marco una opción, entonces veo que están agrupadas dentro de un `<fieldset>`.
+- [x] Dado que estoy en `eventos.html`, cuando miro el menú, entonces el enlace Eventos tiene `aria-current="page"`.
