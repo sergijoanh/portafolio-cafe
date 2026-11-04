@@ -19,7 +19,6 @@
        - Los enlaces van en una lista <ul>: el lector anuncia "lista, 4 elementos".
        ============================================================ -->
   <header class="encabezado">
-    <h1>cafe Altamira</h1>
     <a class="logo" href="#cafes">
       <img src="img/grano.svg" alt="" width="28" height="28">
       Café Altamira
@@ -52,37 +51,34 @@
          - Cada producto debe ser un <article> con el nombre en <h3>.
          - Cada imagen necesita un alt que describa el producto (no el nombre del archivo).
          ============================================================ -->
-    <div class="seccion" id="cafes">
-      <div class="subtitulo">Nuestros cafés</div>
+    <section id="cafes">
+      <h2 class="subtitulo">Nuestros cafés</h2>
       <div class="productos">
-        <div class="producto">
-          <img src="img/cafe-clasico.svg" width="300" height="220"
-                  alt="bolsa de cafe marron">
-          <div class="nombre">Altamira Clásico</div>
+        <article class="producto">
+          <img src="img/cafe-clasico.svg" width="300" height="220" alt="bolsa de cafe marron">
+          <h3 class="nombre">Altamira Clásico</h3>
           <p>Origen: Santuario, Risaralda · Notas: chocolate y panela.</p>
           <p class="precio">$32.000 · 500 g</p>
-        </div>
-        <div class="producto">
-          <img src="img/cafe-geisha.svg" width="300" height="220"
-                  alt="bolsa de cafe verde">
-          <div class="nombre">Geisha de Altura</div>
+        </article>
+        <article class="producto">
+          <img src="img/cafe-geisha.svg" width="300" height="220" alt="bolsa de cafe verde">
+          <h3 class="nombre">Geisha de Altura</h3>
           <p>Origen: Apía, Risaralda · Notas: jazmín y durazno.</p>
           <p class="precio">$58.000 · 250 g</p>
-        </div>
-        <div class="producto">
-          <img src="img/cafe-honey.svg" width="300" height="220"
-                  alt="bolsa de cafe color cafe">
-          <div class="nombre">Honey La Esmeralda</div>
+        </article>
+        <article class="producto">
+          <img src="img/cafe-honey.svg" width="300" height="220" alt="bolsa de cafe color cafe">
+          <h3 class="nombre">Honey La Esmeralda</h3>
           <p>Origen: Belén de Umbría · Notas: miel y frutos rojos.</p>
           <p class="precio">$41.000 · 500 g</p>
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
 
     <!-- ============================================================
          EJEMPLO RESUELTO 2 · Sección con figura
          - aria-labelledby une la sección con su título: el lector la anuncia
-           como "región, Nuestra historia".
+         como "región, Nuestra historia".
          - <figure> + <figcaption> asocian la imagen con su pie de foto.
          - El alt describe lo que se VE; el figcaption agrega contexto.
          ============================================================ -->
